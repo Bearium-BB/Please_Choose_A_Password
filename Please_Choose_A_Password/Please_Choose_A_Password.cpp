@@ -60,10 +60,31 @@ int main()
         }
         else
         {
-            std::cout << "Password is valid. thank you!" << std::endl;
-            isRunning = 0;
+            std::cout << "Confirmation Password." << std::endl;
+
+            while (true) 
+            {
+                std::cout << "Enter password : ";
+
+                std::string passwordConfirmation = buildPassword();
+
+                if (passwordConfirmation == password) {
+
+                    std::cout << "Password is valid. thank you!" << std::endl;
+
+                    isRunning = 0;
+
+                    break;
+                }
+                else
+                {
+                    std::cout << "Try Again." << std::endl;
+                    break;
+                }
+            }
         }
     }
+
 
 }
 
