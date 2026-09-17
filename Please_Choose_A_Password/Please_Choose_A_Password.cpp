@@ -26,7 +26,6 @@ std::string buildPassword()
         }
     }
     std::cout << std::endl;
-    std::cout << password;
     return password;
 }
 
