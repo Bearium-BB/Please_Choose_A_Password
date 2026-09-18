@@ -35,9 +35,14 @@ int main()
 
     bool isRunning = 1;
 
+    std::cout << "Password must be at least 8 characters long." << std::endl;
+    std::cout << "Password must contain at least one lowercase letter." << std::endl;
+    std::cout << "Password must contain at least one uppercase letter." << std::endl;
+    std::cout << "Password must contain at least one number." << std::endl;
 
     while (isRunning)
     {
+
         std::cout << "Enter password : ";
 
         password = buildPassword();
@@ -84,8 +89,6 @@ int main()
             }
         }
     }
-
-
 }
 
 //std::isupper(c)
